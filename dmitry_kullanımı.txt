@@ -1,0 +1,16 @@
+Dmitry ==> Hedef sistem üzerinde tarama yaparak bir çok bilgiyi bize sunan bir araçtır. Whois bilgileri, Subdomoainler, E-mail adresleri, portlar vs...
+********************************************************************************************************************************************************
+
+root@kali:~#  dmitry 192.168.1.1 -winsepfb -o /root/Desktop/kayıt
+
+
+dmitry
+
+-o  çıktıyı txt dosyasına çevirir.
+-i Bir sunucunun IP adresine whois araması yapar.
+-w Bir ana bilgisayarın etki alanı adına bir whois araması yapar.
+-n Bir ana bilgisayardaki Netcraft.com bilgilerini alır.
+-s Alt alanlar için bir arama yapar.
+-e e-posta adreslerini araştırır.
+-p Bir ana bilgisayarda bir TCP port taraması gerçekleştirir.
+
