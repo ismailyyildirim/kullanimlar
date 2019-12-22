@@ -1,0 +1,44 @@
+Tarama teknikleri									*
+											*
+Parametreler		Örnek				Açıklama			*
+											*
+-sS		nmap 192.168.1.1 -sS		TCP SYN port taraması (Varsayılan)	*
+-sT		nmap 192.168.1.1 -sT 		TCP bağlantı noktası taraması		*
+-sU		nmap 192.168.1.1 -sU		UDP Port taraması			*
+-sA 		nmap 192.168.1.1 -sU		TCP ACK Port ataraması			*
+-sW		nmap 192.168.1.1 -sA		TCP Windows port taraması		*
+*****************************************************************************************
+Network KEşif Taramaları								*
+											*
+Parametreler		Örnek				Açıklama			*
+-sL		nmap 192.168.1.1-3 -sL		Tarama yok. Yalnızca hedefleri listele	*
+-sn		nmap 192.168.1.1/24 -sn		Port taramayı devre dışı bırak		*
+-Pn		nmap 192.168.1.1-5 -Pn		Keşif yapma				*
+*****************************************************************************************
+Açık Hostları Bulma									*
+											*
+Parametreler		Örnek				Açıklama			*
+-sP		nmap 192.168.1.1 -sP		Default Ping taraması			*
+-sP -PS		nmap 192.168.1.1 -sP -PS	TCP/SYN ping				*
+-sP -PS80	nmap 192.168.1.1 -sP -PS80	Spesifik port				*
+-sP -PR		nmap 192.168.1.1 -sP -PR	ARP Taraması				*
+*****************************************************************************************
+Tespit Teknikleri									*
+											*
+Parametreler		Örnek				Açıklama			*
+-O		nmap 192.168.1.1 -O 		işletim sistemi				*
+-O -v		nmap 192.168.1.1 -O -v		İşletim sistemi (Verb.)			*
+-sV		nmap 192.168.1.1 -sV		Servis versiyonu			*
+-sV --version-trace				Hata tespiti				*
+-sO		nmap 192.168.1.1 -sO		Port listeleme				*
+*****************************************************************************************
+Network Keşif Taramaları								*
+											*
+Parametreler		Örnek				Açıklama			*
+-sP		nmap 192.168.1.1 -sP		Ping ile tarama				*
+-PN		nmap 192.168.1.1 -PN		Ping atmadan tarama			*
+-PS		nmap 192.168.1.1 -PS		TCP SYN Ping tarama			* 
+-PA		nmap 192.168.1.1 -PA		TCP ACK Ping tarama			*
+-PU		nmap 192.168.1.1 -PU		UDP Ping taraması			*
+*****************************************************************************************
+
